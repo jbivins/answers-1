@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <script language="JavaScript">
+    function onClickMe() {
+      const clickMeButton = document.getElementById('clickMeButton');
+      const nextButtonTextInput = document.getElementById('nextButtonTextInput');
+
+      clickMeButton.innerHTML = nextButtonTextInput.value;
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="">new button text</label>
+    <input type="text" id="nextButtonTextInput" value="" />
+    <button type="button" id="clickMeButton" onClick="onClickMe();">Click Me</button>
+  </form>
+</body>
+</html>

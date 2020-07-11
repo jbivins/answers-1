@@ -1,0 +1,26 @@
+Please use exact commands for starting your work,
+
+Copy production codebase so that I can be developing a new feature:
+
+  git clone git@github.com:jbivins/project.git
+
+Create a new feature branch:
+
+  cd project
+  git fetch && git pull
+  git checkout -b feature_example
+
+Prepare for a review:
+
+  git add -A
+  git status
+
+  git commit -m "Descriptive task name"
+  git push --set-upstream origin feature_example
+
+To deploy:
+
+  git checkout master
+  git fetch && git pull
+  git merge origin/feature_example
+  git push
